@@ -1,8 +1,8 @@
-import { read } from 'fs';
+
 import  * as https from 'https';
 import { proxyAgent} from 'proxy-agent';
 
-const agent = nev proxyAgent();
+const agent = new proxyAgent();
 
 https.get('https://jsonip.com',{agent},(res)=>{
 
